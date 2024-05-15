@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.container {
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+.container,
+.boxColor,
+.boxColor article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.2s;
+}
+
+.boxColor {
+  width: 28em;
+  height: 12em;
+  padding: 1em;
+  gap: 1em;
+  color: #f2f2f2;
+  background: #303030cc;
+  border-radius: 0.4em;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 0 1em #30303055;
+}
+
+.boxColor article {
+  height: 100%;
+}
+
+.boxColor article:nth-child(1) {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15%;
+  margin-top: 0.4em;
+}
+
+.boxColor article:nth-child(1) label {
+  margin: 0 0.1em;
+  font-weight: bolder;
+}
+
+.boxColor article:nth-child(1) label:nth-child(1) {
+  color: red;
+}
+
+.boxColor article:nth-child(1) label:nth-child(2) {
+  color: green;
+}
+
+.boxColor article:nth-child(1) label:nth-child(3) {
+  color: blue;
+}
+
+.boxColor article:nth-child(1) div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.boxColor article:nth-child(1) div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+  transform: rotate(270deg);
+  position: relative;
+  top: -2em;
+}
+
+.boxColor article:nth-child(2) {
+  flex-direction: column;
+  width: 70%;
+}
+
+.boxColor article:nth-child(3) {
+  width: 15%;
+}
+
+.boxColor article select,
+input[type="button" i],
+input[type="color" i] {
+  border: none;
+  cursor: pointer;
+}
+
+.boxColor article select,
+input[type="button" i] {
+  padding: 0.2em 0.6em;
+  box-shadow: 0 0 2px #30303055;
+  border-radius: 0.4em;
+  background: #fff;
+}
+
+.boxColor article select {
+  width: 100%;
+  margin-bottom: 1.6em;
+  outline: none;
+}
+
+.boxColor article h1 {
+  font-size: 1.6em;
+  height: 1.3em;
+}
+
+input[type="color" i] {
+  background: transparent;
+  height: 11.4em;
+  width: 6em;
+}
+
+input[type="button" i] {
+  margin-top: 0.2em;
+  transition: 0.1s;
+}
+
+input[type="button" i]:hover {
+  transform: scale(1.04);
+}
+
+input[type="button" i]:disabled:hover {
+  cursor: default;
+  transform: none;
+}
+
+.next {
+  padding: 0.6em 2em;
+  border-radius: 1.4em 1em;
+  border: 1px solid #f2f2f2;
+  background: #303030cc;
+  color: #f2f2f2;
+  font-family: Poppins;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.next:hover {
+  transform: scale(1.1);
+}

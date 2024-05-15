@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Color</title>
+  </head>
+  <body>
+    <main class="container" id="container">
+      <section class="boxColor">
+        <article>
+          <div>
+            <label for="R">R</label>
+            <label for="G">G</label>
+            <label for="B">B</label>
+          </div>
+          <div>
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="242"
+              disabled="true"
+              id="rangeOne"
+            />
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="242"
+              disabled="true"
+              id="rangeTwo"
+            />
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="242"
+              disabled="true"
+              id="rangeThree"
+            />
+          </div>
+        </article>
+        <article>
+          <select id="inputSelect">
+            <option selected>Select...</option>
+            <option value="0">RGB</option>
+            <option value="1">HEX</option>
+          </select>
+          <h1 id="colorSelect">#F2F2F2</h1>
+          <input type="button" value="Change" disabled="true" id="inputBtn" />
+        </article>
+        <article>
+          <input type="color" id="inputColor" disabled="true" value="#F2F2F2" />
+        </article>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
